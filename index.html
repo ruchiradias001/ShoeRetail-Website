@@ -19,8 +19,8 @@
     <!-- bootstrap cdn -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- jQuery cdn -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -38,54 +38,57 @@
     <script src="script.js"></script>
 </head>
 <body>
-   <!-- navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    
+    <header class="container-fluid">
+    <!-- navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-        <!-- toggler -->
-        <button class="navbar-toggler" 
-                type="button" 
-                data-toggle="collapse" 
-                data-target="#navbar-content" 
-                aria-controls="navbar-content" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!-- toggler -->
+            <button class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbar-content" 
+                    aria-controls="navbar-content" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- brand -->
-        <a href="index.html" class="navbar-brand"><h1>Clarks.</h1></a>
+            <!-- brand -->
+            <a href="index.html" class="navbar-brand"><h1>Clarks.</h1></a>
 
-        <!-- navbar -->
-        <div class="collapse navbar-collapse" id="navbar-content">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item  active">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" 
-                        id="dropdown-shoe"
-                        role="button"
-                        data-toggle="dropdown"
-                        aria-haspopup="true"
-                        aria-expanded="false"
-                    >Shoes</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown-shoe">
-                        <a href="#" class="dropdown-item">Mens</a>
-                        <a href="#" class="dropdown-item">Womens</a>
-                        <a href="#" class="dropdown-item">Universal</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-            </ul>
-            <div>
-                <a href="#">
-                    <img src="./icons/shopping-cart.png" alt="cart" class="icon">
-                </a>
+            <!-- navbar -->
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item  active">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" 
+                            id="dropdown-shoe"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >Shoes</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-shoe">
+                            <a href="#" class="dropdown-item">Mens</a>
+                            <a href="#" class="dropdown-item">Womens</a>
+                            <a href="#" class="dropdown-item">Universal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#">
+                        <img src="./icons/shopping-cart.png" alt="cart" class="icon">
+                    </a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- hero -->
     <section class="container">
@@ -116,5 +119,11 @@
             </a>
         </div>
     </section>
+
+    <footer class="container-fuid bg-light">
+        <div class="footer container text-center">
+            <p>Created by Ruchira Dias</p>
+        </div>
+    </footer>
 </body>
 </html>

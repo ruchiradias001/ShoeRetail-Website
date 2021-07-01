@@ -42,13 +42,18 @@ section
 
 .card
 {
-    margin-bottom: 25px;
+    margin: 20px;
 }
 
 .hero .card:hover
 {
     color: grey;
     text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
 }
 
 
@@ -74,5 +79,9 @@ section
     {
         width: 40px;
         height: auto;
-    }    
+    } 
+    .card
+    {
+        margin: 0px;
+    }   
 }
