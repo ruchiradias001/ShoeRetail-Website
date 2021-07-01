@@ -27,9 +27,35 @@ a
     height: auto;
 }
 
+section
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero
+{
+    margin-top: 90px;
+}
+
+.card
+{
+    margin-bottom: 25px;
+}
+
+.hero .card:hover
+{
+    color: grey;
+    text-decoration: none;
+}
+
+
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
-    
+
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -48,5 +74,5 @@ a
     {
         width: 40px;
         height: auto;
-    }
+    }    
 }
