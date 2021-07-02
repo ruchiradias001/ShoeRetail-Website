@@ -21,6 +21,12 @@ a
     text-decoration: none;
 }
 
+a:hover
+{
+    color: black;
+    text-decoration: none;
+}
+
 ul
 {
     list-style: none;

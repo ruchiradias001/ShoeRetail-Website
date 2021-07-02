@@ -79,8 +79,8 @@
     <section class="container" id="search">
         <div class="search flex-center-column w-100 p-5">
             <h1 class="search-heading">Search Shoes</h1>
-            <div class="row">
-                <div class="search-item col-sm-12 col-md-6 col-lg flex-center-column">
+            <div class="row flex-center">
+                <div class="search-item col-sm-12 col-md-6 col-lg-4 flex-center-column">
                     <div class="flex-center">
                         <img src="./icons/shoe.png" alt="style" class="icon">
                         <h3 class="search-type">Style</h3>
@@ -94,20 +94,35 @@
                         </select>
                     </div>                
                 </div>
-                <div class="search-item col-sm-12 col-md-6 col-lg flex-center-column">
+                <div class="search-item col-sm-12 col-md-6 col-lg-4 flex-center-column">
+                    <div class="flex-center">
+                        <img src="./icons/dropper.png" alt="dropper" class="icon mr-2">
+                        <h3 class="search-type">Colour</h3>
+                    </div>
+                    <div>
+                        <select>
+                            <option value="all" selected>All</option>
+                            <option value="red">Red</option>
+                            <option value="black">Black</option>
+                            <option value="brown">Brown</option>
+                            <option value="white">White</option>
+                        </select>
+                    </div>                
+                </div>
+                <div class="search-item col-sm-12 col-md-8 col-lg-4 flex-center-column">
                     <div class="flex-center">
                         <img src="./icons/man.png" alt="man" class="icon">
                         <h3 class="search-type">Gender</h3>
                     </div>
                     <div>
                         <select>
-                            <option value="all" selected>All</option>
+                            <option value="any" selected>Any</option>
                             <option value="mens">Mens</option>
                             <option value="womens">Womens</option>
                         </select>
                     </div>                
                 </div>
-                <div class="search-item col-sm-12 col-md-6 col-lg flex-center-column">
+                <div class="search-item col-sm-12 col-md-6 col-lg-4 flex-center-column">
                     <div class="flex-center">
                         <img src="./icons/foot.png" alt="size" class="icon">
                         <h3 class="search-type">Size Range</h3>
@@ -118,9 +133,9 @@
                         <div class="form-label"><p><span id="max-size">12</span></p></div>
                     </div>                
                 </div>
-                <div class="search-item col-sm-12 col-md-6 col-lg-12 flex-center-column">
+                <div class="search-item col-sm-12 col-md-6 col-lg-4 flex-center-column">
                     <div class="flex-center">
-                        <img src="./icons/money.png" alt="price" class="icon">
+                        <img src="./icons/money.png" alt="price" class="icon mr-2">
                         <h3 class="search-type">Price Range</h3>
                     </div>
                     <div class="flex-center">
