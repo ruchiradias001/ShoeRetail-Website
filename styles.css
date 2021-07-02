@@ -97,6 +97,12 @@ select
 	box-shadow: 0px 0px 5px 0 rgba(0,0,0,0.5);
 }
 
+/* shoe */
+#shoe
+{
+    min-height: 90vh;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
