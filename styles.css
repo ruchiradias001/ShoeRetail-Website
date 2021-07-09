@@ -62,6 +62,13 @@ ul
     flex-direction: column;
 }
 
+.flex-start
+{
+	display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+
 section
 {
    min-height: 61vh;
@@ -140,17 +147,6 @@ select
 	box-shadow: 0px 0px 5px 0 rgba(0,0,0,0.5);
 }
 
-/* collection */
-.collection .card:hover
-{
-    background-color: rgba(0,0,0,.1);
-}
-
-/* shoe */
-#shoe
-{
-    min-height: 90vh;
-}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
