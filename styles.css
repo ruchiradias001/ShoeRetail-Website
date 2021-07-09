@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Pacifico&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Permanent+Marker&family=Roboto+Mono&display=swap');
 
 html
 {
@@ -12,7 +12,8 @@ html
 
 .navbar-brand
 {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2rem;
 }
 
 a
@@ -38,15 +39,6 @@ ul
     height: auto;
 }
 
-section, footer
-{
-    margin-top: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .flex-center
 {
 	display: flex;
@@ -62,10 +54,51 @@ section, footer
     flex-direction: column;
 }
 
+.flex-start-column
+{
+	display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+section
+{
+   min-height: 61vh;
+}
+
+section > div, footer
+{
+    margin-top: 55px;
+}
+
 /* navigation */
 .nav-icon
 {
     margin-right: 20px;
+}
+
+/* header */
+header
+{
+    margin-top: 110px;;
+}
+.jumbotron
+{
+    color: white;
+    background-color: red;
+}
+
+.box
+{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.our-collection:hover
+{
+    background-color: white;
 }
 
 /* search */
@@ -73,11 +106,6 @@ section, footer
 {
     background-color: rgba(256,256,256,.8);
 	box-shadow: 0px 0px 5px 0 rgba(0,0,0,0.5);
-}
-
-.search-heading
-{
-    font-size: 2rem;
 }
 
 .search-type
@@ -90,11 +118,32 @@ section, footer
     margin: 20px 0;
 }
 
+.search-btn a
+{
+    color: white;
+}
+
+.search-btn:hover
+{
+    background-color: white;
+}
+
+.search-btn:hover a
+{
+    color: black;
+}
+
 select
 {
     padding: 5px;
 	width: 200px;
 	box-shadow: 0px 0px 5px 0 rgba(0,0,0,0.5);
+}
+
+/* collection */
+.collection .card:hover
+{
+    background-color: rgba(0,0,0,.1);
 }
 
 /* shoe */
