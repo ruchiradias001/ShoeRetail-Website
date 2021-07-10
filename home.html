@@ -17,6 +17,13 @@
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <!-- CSS styles -->
         <link rel="stylesheet" href="styles.css">
+        <!-- bootstrap cdn -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- jQuery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     </head>
     <body>    
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -39,16 +46,13 @@
                         <a href="home.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="result.html" class="nav-link">Mens</a>
+                        <a href="result.html" class="nav-link" id="men">Mens</a>
                     </li>
                     <li class="nav-item">
-                        <a href="result.html" class="nav-link">Womens</a>
+                        <a href="result.html" class="nav-link" id="women">Womens</a>
                     </li>
                     <li class="nav-item">
-                        <a href="result.html" class="nav-link">Universal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="result.html" class="nav-link">Collection</a>
+                        <a href="result.html" class="nav-link" id="universal">Universal</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About</a>
@@ -122,10 +126,11 @@
                             <h3 class="search-type">Gender</h3>
                         </div>
                         <div>
-                            <select>
+                            <select id="gender">
                                 <option value="any" selected>Any</option>
-                                <option value="mens">Mens</option>
-                                <option value="womens">Womens</option>
+                                <option value="men">Mens</option>
+                                <option value="women">Womens</option>
+                                <option value="universal">Universal</option>
                             </select>
                         </div>                
                     </div>
@@ -135,11 +140,14 @@
                             <h3 class="search-type">Style</h3>
                         </div>
                         <div>
-                            <select>
+                            <select id="style">
                                 <option value="all" selected>All</option>
+                                <option value="flats">Flats</option>
                                 <option value="boots">Boots</option>
-                                <option value="formals">Formals</option>
-                                <option value="running">Running</option>
+                                <option value="loafers">Loafers</option>
+                                <option value="sandals">Sandals</option>
+                                <option value="trainers">trainers</option>
+                                <option value="slippers">Slippers</option>
                             </select>
                         </div>                
                     </div>
@@ -160,7 +168,7 @@
                             <h3 class="search-type">Colour</h3>
                         </div>
                         <div>
-                            <select>
+                            <select id="color">
                                 <option value="all" selected>All</option>
                                 <option value="black">Black</option>
                                 <option value="brown">Brown</option>
@@ -174,8 +182,8 @@
                             <h3 class="search-type">Size Range</h3>
                         </div>
                         <div>
-                            <select>
-                                <option value="all" selected>All</option>
+                            <select id="size">
+                                <option value="0" selected>All</option>
                                 <option value="4">04</option>
                                 <option value="5">05</option>
                                 <option value="6">06</option>
@@ -195,22 +203,8 @@
             </div>
         <!-- favorites -->
             <div id="favorite">
-                <div class="favorites row">
+                <div class="favorite row">
                     <h3 class="col-12">Favorites</h3>
-                    <div class="col-3 p-1">
-                        <a href="#" class="card flex-center">
-                            <div class="card-img-top flex-center">
-                                <img src="./shoes/shoe1_0_Large.jpeg" alt="shoe image" class="w-75">
-                            </div>
-                            <div class="card-body">
-                                <h3 class="card-title">Addidas X1</h3>
-                                <h4 class="card-subtitle">Mens</h4>
-                            </div>
-                            <div class="fav-btn">
-                                <img src="./i" alt="">
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
         <!-- collection -->
@@ -254,13 +248,6 @@
             </div>
         </footer>
 
-        <!-- bootstrap cdn -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!-- jQuery cdn -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
         <!-- script -->
         <script src="script.js"></script>
     </body>

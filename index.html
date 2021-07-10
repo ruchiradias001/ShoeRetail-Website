@@ -17,6 +17,13 @@
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <!-- CSS styles -->
         <link rel="stylesheet" href="styles.css">
+        <!-- bootstrap cdn -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- jQuery cdn -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     </head>
     <body>    
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -35,20 +42,17 @@
         <!-- nav -->
             <div class="collapse navbar-collapse" id="navbar-content">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="home.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="result.html" class="nav-link">Mens</a>
+                        <a href="result.html" class="nav-link" id="men">Mens</a>
                     </li>
                     <li class="nav-item">
-                        <a href="result.html" class="nav-link">Womens</a>
+                        <a href="result.html" class="nav-link" id="women">Womens</a>
                     </li>
                     <li class="nav-item">
-                        <a href="result.html" class="nav-link">Universal</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="result.html" class="nav-link">Collection</a>
+                        <a href="result.html" class="nav-link" id="universal">Universal</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About</a>
@@ -81,92 +85,127 @@
         </header>
 
         <section class="container">
-        <!-- shoe -->
-            <div id="shoe">
-                <div class="shoe">
-                <!-- shoe image -->
-                    <div class="shoe-image row">
-                        <div class="col-4">
-                            <img src="./shoes/shoe2_0_Large.jpeg" alt="large shoe image" class="w-100">
-                        </div>
-                        <div class="col-8 row">
-                            <div  class="col-4 p-1">
-                                <div class="border border-dark">
-                                    <img src="./shoes/shoe2_1_Large.jpeg" alt="thumbnail shoe image" class="w-100"">
-                                </div>
-                            </div>
-                            <div  class="col-4 p-1">
-                                <div class="border border-dark">
-                                    <img src="./shoes/shoe2_2_Large.jpeg" alt="thumbnail shoe image" class="w-100"">
-                                </div>
-                            </div>
-                            <div  class="col-4 p-1">
-                                <div class="border border-dark">
-                                    <img src="./shoes/shoe2_3_Large.jpeg" alt="thumbnail shoe image" class="w-100"">
-                                </div>
-                            </div>
-                            <div  class="col-4 p-1">
-                                <div class="border border-dark">
-                                    <img src="./shoes/shoe2_4_Large.jpeg" alt="thumbnail shoe image" class="w-100"">
-                                </div>
-                            </div>
-                            <div  class="col-4 p-1">
-                                <div class="border border-dark">
-                                    <img src="./shoes/shoe2_5_Large.jpeg" alt="thumbnail shoe image" class="w-100"">
-                                </div>
-                            </div>
-                            <div  class="col-4 p-1">
-                                <div class="border border-dark">
-                                    <img src="./shoes/shoe2_6_Large.jpeg" alt="thumbnail shoe image" class="w-100"">
-                                </div>
-                            </div>
+        <!-- hero -->
+            <div id="carouselControls" class="carousel slide flex-center" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="./images/running.jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="bg-dark p-2">RUNNING</h5>
                         </div>
                     </div>
-                <!-- shoe details -->
-                    <div class="shoe-details row mt-5">
-                        <div class="col-12">
-                            <h2>Orinoco 2 Lace</h2>
-                        </div>
-                        <div class="col-6 flex-start">
-                            <img src="./icons/man.png" alt="man" class="icon mr-3">
-                            <h4>Womens</h4>
-                        </div>
-                        <div class="col-6 flex-start">
-                            <img src="./icons/shoe.png" alt="shoe" class="icon mr-3">
-                            <h4>Boots</h4>
-                        </div>
-                        <div class="col-6 flex-start">
-                            <img src="./icons/dropper.png" alt="dropper" class="icon mr-3">
-                            <h4>Brown</h4>
-                        </div>
-                        <div class="col-6 flex-start">
-                            <img src="./icons/money.png" alt="price" class="icon mr-3">
-                            <h4>89.00&#163</h4>
-                        </div>
-                        <div class="col-12 flex-start">
-                            <img src="./icons/foot.png" alt="size" class="icon mr-3">
-                            <h4>5, 6, 7, 9, 10</h4>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/boots.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="bg-dark p-2">BOOTS</h5>
                         </div>
                     </div>
-                <!-- shoe tabs -->
-                    <div id="tabs" class="mt-5 mb-5">
-                        <ul>
-                            <li><a href="#tabs-1">Shoe Discription</a></li>
-                            <li><a href="#tabs-2">Size Guide</a></li>
-                            <li><a href="#tabs-3">Delivery & Return</a></li>
-                        </ul>
-                        <div id="tabs-1">
-                            <p>Refreshing our bestselling Orinoco profile, a lace-up ankle boot that stays all day wearable. The premium dark olive leather upper stays classic and crafted while the cleated sole with 3cm heel feels durable and adds grip. Perfect to step into the season with casual style.</p>
-                        </div>
-                        <div id="tabs-2">
-                            <div class="flex-center">
-                                <img src="./images/SizeChart.png" alt="size chart">
-                        </div> 
-                        </div>
-                        <div id="tabs-3">
-                            <p>If you’re looking to return or exchange your order for whatever reason, we're here to help! We offer free returns or exchanges within 30 days of purchase. You can return your product for store credit, a different product, or a refund to the original payment method.</p>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="./images/slippers.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="bg-dark p-2">SLIPPERS</h5>
                         </div>
                     </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        <!-- search -->
+            <div class="search flex-center-column w-100 p-5">
+                <h2>Search Shoes</h2>
+                <div class="row flex-center">
+                    <div class="search-item col-sm-12 col-md-6 col-lg-4 flex-center-column">
+                        <div class="flex-center">
+                            <img src="./icons/man.png" alt="man" class="icon">
+                            <h3 class="search-type">Gender</h3>
+                        </div>
+                        <div>
+                            <select id="gender">
+                                <option value="any" selected>Any</option>
+                                <option value="men">Mens</option>
+                                <option value="women">Womens</option>
+                                <option value="universal">Universal</option>
+                            </select>
+                        </div>                
+                    </div>
+                    <div class="search-item col-sm-12 col-md-6 col-lg-4 flex-center-column">
+                        <div class="flex-center">
+                            <img src="./icons/shoe.png" alt="style" class="icon">
+                            <h3 class="search-type">Style</h3>
+                        </div>
+                        <div>
+                            <select id="style">
+                                <option value="all" selected>All</option>
+                                <option value="flats">Flats</option>
+                                <option value="boots">Boots</option>
+                                <option value="loafers">Loafers</option>
+                                <option value="sandals">Sandals</option>
+                                <option value="trainers">trainers</option>
+                                <option value="slippers">Slippers</option>
+                            </select>
+                        </div>                
+                    </div>
+                    <div class="search-item col-sm-12 col-md-8 col-lg-4 flex-center-column">
+                        <div class="flex-center">
+                            <img src="./icons/money.png" alt="price" class="icon mr-2">
+                            <h3 class="search-type">Price Range</h3>
+                        </div>
+                        <div class="flex-center">
+                            <div class="form-label"><p><span id="min-price">60</span>&#163</p></div>
+                            <div id="price-slider" class="slider"></div>
+                            <div class="form-label"><p><span id="max-price">90</span>&#163</p></div>
+                        </div>                
+                    </div>
+                    <div class="search-item col-sm-12 col-md-6 col-lg-4 flex-center-column">
+                        <div class="flex-center">
+                            <img src="./icons/dropper.png" alt="dropper" class="icon mr-2">
+                            <h3 class="search-type">Colour</h3>
+                        </div>
+                        <div>
+                            <select id="color">
+                                <option value="all" selected>All</option>
+                                <option value="black">Black</option>
+                                <option value="brown">Brown</option>
+                                <option value="white">White</option>
+                            </select>
+                        </div>                
+                    </div>
+                    <div class="search-item col-sm-12 col-md-6 col-lg-4 flex-center-column">
+                        <div class="flex-center">
+                            <img src="./icons/foot.png" alt="size" class="icon">
+                            <h3 class="search-type">Size Range</h3>
+                        </div>
+                        <div>
+                            <select id="size">
+                                <option value="0" selected>All</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>                
+                    </div>
+                </div>
+                <button class="search-btn btn btn-dark">
+                    <a href="result.html">Search</a>
+                </button>
+            </div>
+        <!-- favorites -->
+            <div id="favorite">
+                <div class="favorite row">
+                    <h3 class="col-12">Favorites</h3>
+                </div>
             </div>
         <!-- collection -->
             <div class="collection row flex-center">
@@ -209,13 +248,6 @@
             </div>
         </footer>
 
-        <!-- bootstrap cdn -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!-- jQuery cdn -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
         <!-- script -->
         <script src="script.js"></script>
     </body>
